@@ -3,6 +3,7 @@ import { PrincipalComponent } from '../Components/principal/principal.component'
 import { RouterModule, Routes } from '@angular/router';
 import { InfoMainComponent } from '../Components/info-main/info-main.component';
 import { FormComponent } from '../Components/form/form.component';
+import { ContactoComponent } from '../components/contacto/contacto.component';
 
 
 const routes : Routes = [
@@ -16,6 +17,9 @@ const routes : Routes = [
 
   { path:"form",
    component:FormComponent  },
+
+   { path:"contacto",
+   component:ContactoComponent  },
 
   { path:"**", redirectTo: "home"},//Ruta para direccionar siempre a home 
 ]

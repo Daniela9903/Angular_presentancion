@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { InformacionPComponent } from './Components/informacion-p/informacion-p.component';
 import { InfoMainComponent } from './Components/info-main/info-main.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 
@@ -20,7 +21,8 @@ import { InfoMainComponent } from './Components/info-main/info-main.component';
     ImagenComponent,
     InformacionPComponent,
     FooterComponent,
-    InfoMainComponent
+    InfoMainComponent,
+    ContactoComponent
    
   ],
   imports: [
