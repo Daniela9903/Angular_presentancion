@@ -12,8 +12,9 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormComponent } from './Components/form/form.component';
 import { AgregarComponent } from './components/agregar/agregar.component';
-
-
+import { HttpClientModule } from '@angular/common/http';
+import { ListadoComponent } from './components/listado/listado.component';
+import { UserService } from './services/user.service';
 
 
 
@@ -27,14 +28,16 @@ import { AgregarComponent } from './components/agregar/agregar.component';
     FooterComponent,
     InfoMainComponent,
     ContactoComponent,
-    AgregarComponent
+    AgregarComponent,
+    ListadoComponent
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

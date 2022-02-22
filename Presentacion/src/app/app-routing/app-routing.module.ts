@@ -5,6 +5,7 @@ import { InfoMainComponent } from '../Components/info-main/info-main.component';
 import { FormComponent } from '../Components/form/form.component';
 import { ContactoComponent } from '../components/contacto/contacto.component';
 import { AgregarComponent } from '../components/agregar/agregar.component';
+import { ListadoComponent } from '../components/listado/listado.component';
 
 
 const routes : Routes = [
@@ -24,6 +25,9 @@ const routes : Routes = [
 
    { path:"agregar",
    component:AgregarComponent},
+
+   { path:"listado",
+   component:ListadoComponent},
 
   { path:"**", redirectTo: "home"},//Ruta para direccionar siempre a home 
 ]
