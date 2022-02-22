@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl,FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-contacto',
-  templateUrl: './contacto.component.html',
-  styleUrls: ['./contacto.component.css']
+  selector: 'app-agregar',
+  templateUrl: './agregar.component.html',
+  styleUrls: ['./agregar.component.css']
 })
-export class ContactoComponent implements OnInit {
+export class AgregarComponent implements OnInit {
 
   formulario = this.formBuilder.group({
     name: '',

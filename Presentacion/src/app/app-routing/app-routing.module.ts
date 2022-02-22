@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { InfoMainComponent } from '../Components/info-main/info-main.component';
 import { FormComponent } from '../Components/form/form.component';
 import { ContactoComponent } from '../components/contacto/contacto.component';
+import { AgregarComponent } from '../components/agregar/agregar.component';
 
 
 const routes : Routes = [
@@ -20,6 +21,9 @@ const routes : Routes = [
 
    { path:"contacto",
    component:ContactoComponent  },
+
+   { path:"agregar",
+   component:AgregarComponent},
 
   { path:"**", redirectTo: "home"},//Ruta para direccionar siempre a home 
 ]

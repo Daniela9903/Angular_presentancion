@@ -1,6 +1,7 @@
   <div class="card card-form col-3">
     <div class="card-body">
-        <form>
+
+        <form  [formGroup]="formulario" (ngSubmit)="Guardar()">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Nombre</label>
               <input type="nombre" class="form-control" formControlName="nombre">
@@ -18,13 +19,24 @@
 
             <div class="mb-3">
                 <label class="form-label">Telefono</label>
-                <input id="telefono" type="text" class="form-control" formControlName="telefono">>
+                <input id="telefono" type="text" class="form-control" formControlName="telefono">
             </div>
            
             <button type="submit" class="btn bt-guardar">Guardar</button>
         </form>
     </div>
   </div>
-
+  <hr>
+  <h3>Usuarios</h3>
+  <table>
+      <tr>
+          <th>Nombre</th>
+      </tr>
+      <tbody *ngFor="let user of usuarios">
+              <tr>
+                  <td>{{user.nombre}}</td>
+              </tr>
+      </tbody>
+  </table>
 
  

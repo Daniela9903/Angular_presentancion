@@ -1,6 +1,6 @@
-<div class="card card-form col-3">
+ <div class="card card-form col-3">
     <div class="card-body">
-        <form>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
             <h5>Por favor Dejenos un mensaje</h5>
             <div class="mb-3">
               <label class="form-label">Nombre</label>
@@ -30,6 +30,12 @@
         </form>
     </div>
   </div>
+
+  <div *ngIf="status">
+    <h2>Los datos Ingresados Fueron</h2>
+    <h3>El nombre  fue : {{nombre}}</h3>
+    <h3>El asunto fue : {{asunto}}</h3>
+</div>
 
 
  

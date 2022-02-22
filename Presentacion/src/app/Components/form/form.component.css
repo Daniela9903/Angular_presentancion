@@ -22,3 +22,20 @@
 .bt-guardar:hover{
     background-color: rgba(199, 26, 141, 0.521);
 }
+
+h3{
+    color: azure;
+}
+
+hr{
+    background-color: azure;
+    height: 5px;
+}
+
+th{
+    color: azure;
+}
+
+td{
+    color: azure;
+}
