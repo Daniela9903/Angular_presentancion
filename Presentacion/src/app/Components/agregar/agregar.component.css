@@ -6,4 +6,9 @@
 h4{
     color: azure;
     margin-left: 100px;
+    margin-top: 20px;
+}
+
+::placeholder{
+    color: azure;
 }

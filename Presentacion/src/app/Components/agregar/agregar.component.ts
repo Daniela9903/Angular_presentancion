@@ -9,16 +9,16 @@ import { FormBuilder, FormControl,FormGroup, Validators } from '@angular/forms';
 export class AgregarComponent implements OnInit {
 
   formulario = this.formBuilder.group({
-    name: '',
-    email: '',
-    asunto:'',
-    descrpcion:'',
+    name_movie: '',
+    ani: '',
+    direc:'',
+    person:'',
   });
 
-  nombre:string = "";
-  email:string = "";
-  asunto:string= "";
-  descripcion:string = "";
+  nombre_peli:string = "";
+  ani_estreno:string = "";
+  director:string= "";
+  personaje:string = "";
 
 
   status = false;
@@ -31,8 +31,8 @@ export class AgregarComponent implements OnInit {
 
   onSubmit(){
     this.status = true
-    this.nombre = this.formulario.get('name')?.value
-    this.asunto = this.formulario.get('asunto')?.value
+    this.nombre_peli = this.formulario.get('name_movie')?.value
+    this.ani_estreno = this.formulario.get('anio')?.value
   }
 
 }
