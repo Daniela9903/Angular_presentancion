@@ -15,6 +15,8 @@ import { AgregarComponent } from './Components/agregar/agregar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListadoComponent } from './Components/listado/listado.component';
 import { UserService } from './services/user.service';
+import { PinturasComponent } from './Components/pinturas/pinturas.component';
+import { PruebaComponent } from './Components/prueba/prueba.component';
 
 
 
@@ -29,7 +31,9 @@ import { UserService } from './services/user.service';
     InfoMainComponent,
     ContactoComponent,
     AgregarComponent,
-    ListadoComponent
+    ListadoComponent,
+    PinturasComponent,
+    PruebaComponent
    
   ],
   imports: [

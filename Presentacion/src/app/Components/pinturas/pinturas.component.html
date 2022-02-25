@@ -1,0 +1,28 @@
+<div class="card card-form col-3">
+    <div class="card-body">
+
+        <form [formGroup]="formulario" (ngSubmit)="Guardar()">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre del pintura</label>
+              <input type="nombre_pintura" class="form-control" formControlName="nombrePintura">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Nombre del artista</label>
+                <input id="nombre_artista" type="text" class="form-control" formControlName="nombreArtista">
+            </div>
+              
+            <div class="mb-3">
+                <label class="form-label">Año en que se realizo esa obra </label>
+                <input id="anio" type="text"  class="form-control" formControlName="anioObra">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Pais del origen del artista</label>
+                <input id="pais" type="text" class="form-control" formControlName="paisArtista">
+            </div>
+           
+            <button type="submit" class="btn bt-guardar">Guardar</button>
+        </form>
+    </div>
+  </div>

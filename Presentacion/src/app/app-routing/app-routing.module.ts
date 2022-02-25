@@ -6,6 +6,8 @@ import { FormComponent } from '../Components/form/form.component';
 import { ContactoComponent } from '../Components/contacto/contacto.component';
 import { AgregarComponent } from '../Components/agregar/agregar.component';
 import { ListadoComponent } from '../Components/listado/listado.component';
+import { PinturasComponent } from '../Components/pinturas/pinturas.component';
+import { PruebaComponent } from '../Components/prueba/prueba.component';
 
 
 const routes : Routes = [
@@ -28,6 +30,12 @@ const routes : Routes = [
 
    { path:"listado",
    component:ListadoComponent},
+
+   { path:"pinturas",
+   component:PinturasComponent},
+
+   { path:"pruebas",
+   component:PruebaComponent},
 
   { path:"**", redirectTo: "home"},//Ruta para direccionar siempre a home 
 ]
