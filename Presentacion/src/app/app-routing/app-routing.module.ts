@@ -3,9 +3,9 @@ import { PrincipalComponent } from '../Components/principal/principal.component'
 import { RouterModule, Routes } from '@angular/router';
 import { InfoMainComponent } from '../Components/info-main/info-main.component';
 import { FormComponent } from '../Components/form/form.component';
-import { ContactoComponent } from '../components/contacto/contacto.component';
-import { AgregarComponent } from '../components/agregar/agregar.component';
-import { ListadoComponent } from '../components/listado/listado.component';
+import { ContactoComponent } from '../Components/contacto/contacto.component';
+import { AgregarComponent } from '../Components/agregar/agregar.component';
+import { ListadoComponent } from '../Components/listado/listado.component';
 
 
 const routes : Routes = [
